@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игротека</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo"><i class="fas fa-dice-d6"></i> Игротека</div>
+            <nav>
+                <a href="index.html" class="active">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="stories.html">Истории</a>
+            </nav>
+            <div class="cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Соберись у коробки</h1>
+                <p>Лучшие настольные игры для компании, семьи и интеллектуальных баталий</p>
+                <a href="catalog.html" class="btn">В каталог →</a>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="container">
+                <h2>⭐ Хиты месяца</h2>
+                <div class="games-list">
+                    <div class="game-card">
+                        <img src="images/monopoly.jpg" alt="Монополия">
+                        <div class="game-info">
+                            <h3><a href="monopoly.html">Монополия</a></h3>
+                            <div class="price">2 490 ₽</div>
+                            <button data-name="Монополия">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="images/colonizers.jpg" alt="Колонизаторы">
+                        <div class="game-info">
+                            <h3><a href="colonizers.html">Колонизаторы</a></h3>
+                            <div class="price">3 490 ₽</div>
+                            <button data-name="Колонизаторы">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="images/uno.jpg" alt="UNO">
+                        <div class="game-info">
+                            <h3><a href="uno.html">UNO</a></h3>
+                            <div class="price">890 ₽</div>
+                            <button data-name="UNO">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="images/bunker.jpg" alt="Бункер">
+                        <div class="game-info">
+                            <h3><a href="bunker.html">Бункер</a></h3>
+                            <div class="price">1 890 ₽</div>
+                            <button data-name="Бункер">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="images/ticket-to-ride.jpg" alt="Билет на поезд">
+                        <div class="game-info">
+                            <h3><a href="ticket-to-ride.html">Билет на поезд</a></h3>
+                            <div class="price">3 290 ₽</div>
+                            <button data-name="Билет на поезд">В корзину</button>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <img src="images/soobrazharium.jpg" alt="Соображарий">
+                        <div class="game-info">
+                            <h3><a href="soobrazharium.html">Соображарий</a></h3>
+                            <div class="price">1 390 ₽</div>
+                            <button data-name="Соображарий">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="feature-item">
+                    <i class="fas fa-truck"></i>
+                    <h3>Доставка 2-3 дня</h3>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-undo-alt"></i>
+                    <h3>Возврат 30 дней</h3>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-star"></i>
+                    <h3>5000+ довольных клиентов</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Игротека. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast">Товар добавлен</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
